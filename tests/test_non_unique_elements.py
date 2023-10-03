@@ -1,4 +1,4 @@
-from poetry_project.non_unique_elements import non_unique_elements
+from poetry_project.non_unique_elements import checkio
 
 def test_non_unique_elements():
     assert list(checkio([1, 2, 3, 1, 3])) == [1, 3, 1, 3]
