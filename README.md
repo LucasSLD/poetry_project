@@ -1,0 +1,1 @@
+![Coverage badge](https://github.com/LucasSLD/poetry_project/blob/master/coverage.svg)
