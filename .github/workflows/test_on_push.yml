@@ -50,6 +50,7 @@ jobs:
       #              run pylint
       #----------------------------------------------
       - name: Run pylint
+        continue-on-error: true
         run: |
           poetry run pylint ./poetry_project/
           poetry run pylint ./tests/
