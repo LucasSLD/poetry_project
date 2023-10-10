@@ -2,10 +2,12 @@ from collections.abc import Iterable
 
 
 def flat_list(array: list[int]) -> Iterable[int]:
-    L = []
+    """Flatten the list given as input"""
+    l = []
     for e in array:
-        if type(e) is list:
-            L += flat_list(e)
+        if isinstance(e,list):
+            l += flat_list(e)
         else:
-            L.append(e)
-    return L
+            l.append(e)
+    return l
+
