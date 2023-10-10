@@ -49,12 +49,15 @@ jobs:
       #----------------------------------------------
       #              run pylint
       #----------------------------------------------
-      - name: Run pylint
+      - name: Run pylint for poetry_project
         continue-on-error: true
         run: |
           poetry run pylint ./poetry_project/
+          
+      - name: Run pylint for tests
+        continue-on-error: true
+        run: |
           poetry run pylint ./tests/
-
       #----------------------------------------------
       #              run test suite
       #----------------------------------------------
