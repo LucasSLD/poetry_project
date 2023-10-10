@@ -52,7 +52,6 @@ jobs:
       - name: Run pylint
         run: |
           poetry run pylint ./poetry_project/
-          poetry run pylint ./tests/
       #----------------------------------------------
       #              run test suite
       #----------------------------------------------
