@@ -54,6 +54,8 @@ jobs:
           source .venv/bin/activate
           poetry run coverage run -m pytest
           poetry run coverage report
+          poetry run pylint poetry_project/
+          poetry run pylint tests/
       #----------------------------------------------
       #              Coverage badge
       #----------------------------------------------
