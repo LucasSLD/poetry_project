@@ -47,6 +47,13 @@ jobs:
       - name: Install project
         run: poetry install --no-interaction
       #----------------------------------------------
+      #              run pylint
+      #----------------------------------------------
+      - name: Run pylint
+        run: |
+          poetry run pylint poetry_project/
+          poetry run pylint tests/
+      #----------------------------------------------
       #              run test suite
       #----------------------------------------------
       - name: Run tests
@@ -54,8 +61,6 @@ jobs:
           source .venv/bin/activate
           poetry run coverage run -m pytest
           poetry run coverage report
-          poetry run pylint poetry_project/
-          poetry run pylint tests/
       #----------------------------------------------
       #              Coverage badge
       #----------------------------------------------
