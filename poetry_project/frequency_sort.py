@@ -2,7 +2,14 @@ from typing import Iterable
 
 
 def frequency_sort(items: list[str | int]) -> Iterable[str | int]:
-    """Returns array sorted by elements count"""
+    """
+    Sort elements of a list by frequency of apparition in the input array.
+    Args:
+        items (list[str  |  int]): Input array to sort
+
+    Returns:
+        Iterable[str | int]: list sorted by frequency
+    """
     count = {}
     position = {}
     for i, e in enumerate(items):
