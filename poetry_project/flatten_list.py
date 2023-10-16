@@ -3,7 +3,7 @@ from collections.abc import Iterable
 
 def flat_list(array: list[int]) -> Iterable[int]:
     """
-    Flatten list given as input
+        Flatten list given as input
     Args:
         array (list[int]): The array to flatten
 
