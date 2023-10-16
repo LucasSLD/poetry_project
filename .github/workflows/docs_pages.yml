@@ -41,9 +41,8 @@ jobs:
     - name: Install dependencies
       if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
       run: poetry install --no-interaction --no-root
-    # - uses: abatilo/actions-poetry@v2.1.6
-    # - name: install
-    #   run: poetry install -E docs
+    - name: install
+      run: poetry install -E docs
     - name: Build documentation
       run: |
         mkdir gh-pages
