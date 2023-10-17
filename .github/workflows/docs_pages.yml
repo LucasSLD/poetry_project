@@ -39,7 +39,7 @@ jobs:
     # install documentation dependencies
     #----------------------------------------------
     - name: install
-      run: poetry install --no-interaction -E docs
+      run: poetry install --no-interaction -E docs -vvv
     #----------------------------------------------
     # build documentation
     #----------------------------------------------
