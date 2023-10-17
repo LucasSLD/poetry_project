@@ -21,7 +21,9 @@ jobs:
     # poetry install
     #----------------------------------------------
     - name: poetry install
-      uses: abatilo/actions-poetry@v2.1.3
+      uses: abatilo/actions-poetry@v2.1.6
+    - name: testing install
+      run : poetry --help
     #----------------------------------------------
     # install documentation dependencies
     #----------------------------------------------
