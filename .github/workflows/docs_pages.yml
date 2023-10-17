@@ -16,7 +16,7 @@ jobs:
         fetch-depth: 0
     - uses: actions/setup-python@v2
       with:
-        python-version: 3.11
+        python-version: '3.11'
     #----------------------------------------------
     #  -----  install & configure poetry  -----
     #----------------------------------------------
@@ -48,7 +48,7 @@ jobs:
         mkdir gh-pages
         touch gh-pages/.nojekyll
         cd docs/
-        poetry run sphinx-build -b html . _build -v
+        poetry run sphinx-build -b html . _build
         cp -r _build/* ../gh-pages/        
     - name: Deploy documentation
       if: ${{ github.event_name == 'push' }}
