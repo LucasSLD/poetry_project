@@ -18,6 +18,15 @@ coverage = "^7.3.2"
 pylint = "^3.0.1"
 black = "^23.9.1"
 
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+Sphinx = ">=5.3"
+sphinx-rtd-theme = ">=1.1"
+sphinx-copybutton = ">=0.5"
+attrs = ">=22"
+
 [tool.poetry.extras]
 docs = ["Sphinx", "sphinx-rtd-theme", "sphinxcontrib-napoleon"]
 
