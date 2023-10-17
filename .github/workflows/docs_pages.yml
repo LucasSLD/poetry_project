@@ -24,8 +24,6 @@ jobs:
       uses: abatilo/actions-poetry@v2.1.6
       with: 
         poetry-version: "1.6.1"
-    - name: testing install
-      run : poetry -V
     #----------------------------------------------
     # install documentation dependencies
     #----------------------------------------------
