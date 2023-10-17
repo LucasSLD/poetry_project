@@ -20,7 +20,8 @@ jobs:
     #----------------------------------------------
     # poetry install
     #----------------------------------------------
-    - uses: abatilo/actions-poetry@v2.1.3
+    - name: poetry install
+      uses: abatilo/actions-poetry@v2.1.3
     #----------------------------------------------
     # install documentation dependencies
     #----------------------------------------------
