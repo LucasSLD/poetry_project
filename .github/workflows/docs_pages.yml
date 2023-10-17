@@ -25,7 +25,7 @@ jobs:
       with: 
         poetry-version: "1.6.1"
     - name: testing install
-      run : poetry --help
+      run : poetry -V
     #----------------------------------------------
     # install documentation dependencies
     #----------------------------------------------
