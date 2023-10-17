@@ -7,14 +7,20 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
 pytest = "^7.4.2"
 coverage = "^7.3.2"
 pylint = "^3.0.1"
 black = "^23.9.1"
 
+[tool.poetry.extras]
+docs = ["Sphinx", "sphinx-rtd-theme", "sphinxcontrib-napoleon"]
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.extras]
-docs = ["Sphinx", "sphinx-rtd-theme", "sphinxcontrib-napoleon"]
