@@ -29,6 +29,8 @@ jobs:
     #----------------------------------------------
     - name: install
       run: poetry install -E docs -vvv
+    - name: sphinx install test
+      run: poetry run sphinx-build -h
     #----------------------------------------------
     # build documentation
     #----------------------------------------------
