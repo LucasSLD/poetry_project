@@ -46,7 +46,6 @@ jobs:
     #----------------------------------------------
     - name: Build documentation
       run: |
-        ls -Ra
         mkdir gh-pages
         touch gh-pages/.nojekyll
         cd docs/
